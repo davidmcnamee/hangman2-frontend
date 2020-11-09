@@ -11,6 +11,7 @@ const Index = () => {
   return (
     <main>
       <h1>Hangman 2.0</h1>
+      <button onClick={() => wsClient.send(JSON.stringify({ msg: 'test' }))}>Click me</button>
     </main>
   );
 }
